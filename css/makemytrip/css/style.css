@@ -1,4 +1,8 @@
 	
+	*{
+		box-sizing:border-box;
+	}
+	
 	.row{
 		display:flex;
 	}
@@ -20,7 +24,89 @@
 	.banner{
 		background-image:url(../image/mountain.jpg);
 		background-size:cover;
-		height:400px;
+		height:500px;
 		padding-left:30px;
 		padding-right:30px;
+	}
+	
+	.service{
+		background-color:white;
+		border:solid 1px LightGray;
+		border-radius:10px;
+		padding:10px;
+		position:absolute;
+		top:100px;
+		left:16%;
+		z-index:5;
+	}
+	
+	.service_box{
+		width:10%;
+		height:auto;
+		float:left;
+		text-align:center;
+	}
+	
+	.service_icon{
+		font-size:40px;
+		font-weight:bold;
+	}
+	
+	.mybtn{
+		font-size:30px;
+		color:white;
+		background-color:blue;
+		border:none;
+		border-radius:30px;
+		padding: 10px 50px 10px 50px;
+		position:absolute;
+		top:355px;
+		left:43%;
+		z-index:4
+	}
+	
+	
+	.booking{
+		border:solid 1px LightGray;
+		border-radius:10px;
+		padding:10px;
+		background-color:white;
+		position:absolute;
+		top:170px;
+		left:8%;
+		z-index:3;
+	}
+	
+	.book_box{
+		border:solid 1px LightGray;
+		border-radius:10px;
+	}
+	
+	.package{
+		border:solid 1px LightGray;
+		border-radius:10px;
+		padding:10px;
+		background-color:white;
+		position:absolute;
+		top:450px;
+		left:8%;
+	}
+	
+	.package_box1{
+		width:40%;
+		height:auto;
+		float:left;
+		padding:10px;
+	}
+	
+	
+	.package_box{
+		width:20%;
+		height:auto;
+		float:left;
+		padding:10px;
+	}
+	.package_box2{
+		border-radius:10px;
+		border:solid 1px lightGray;
 	}
