@@ -2,11 +2,23 @@
    <body>     
       <script type = "text/javascript">
          <!--
+			/*
+
+			conditional Statement
+			
+			if
+			if else
+			if else if else
+			switch
+			nested if
+			
+			*/	
+
 			
 			
 			// if()
-			/*
 			
+			/*
             var age = 18;
 			if(age>18) 
 			{
@@ -19,7 +31,7 @@
 			
 			/*
 			//if() else
-			 var age = 17;
+			var age = 17;
 			if(age>=18) 
 			{
                document.write("<b>Qualifies for driving</b>");
@@ -32,34 +44,30 @@
 			
 			
 			/*
-			var a=10;
-			var b=20;
+			// turnary operator (cond) ? 'yes' : 'No'
 			
-			var ans=(a<b) ? '<b>Qualifies for driving</b>' : '<b> Not Qualifies for driving</b>';
+			var age=10;
+			
+			var ans=(age>18) ? '<b>Qualifies for driving</b>' : '<b> Not Qualifies for driving</b>';
 			document.write(ans);
-			
 			*/
-			
-			/*
+		
 			
 			//if elseif else
-			
-			var x=10,
-			var y=20;
-			var z=15;
-			
-			if(x<y) 
+			/*
+			var name="Rajesh";
+			if(name=="Raj") 
 			{
-               document.write("<b> x greater than y</b>");
+               document.write("<b> Name is Raj </b>");
             }
-			else if(x>z)
+			else if(name=="Darshan") 
 			{
-				document.write("<b> x greater than z</b>");
-			}
-			else if(y>z)
+               document.write("<b> Name is Darshan </b>");
+            }
+			else if(name=="Kriti") 
 			{
-				document.write("<b> y greater than z</b>");
-			}
+               document.write("<b> Name is Kriti </b>");
+            }
 			else
 			{
 			   document.write("<b> all above cond false</b>");
@@ -67,36 +75,8 @@
 			*/
 			
 			
-			
-			
-			
-			
-			// nested if
-			/*
-			var age=17;
-			
-			if(age>18) 
-			{
-               if(age==17)
-			   {
-			      document.write("<b> learning</b>");
-			   }
-			   else
-			   {
-					document.write("<b> Qualifies for driving </b>");
-			   }
-            }
-			else
-			{
-			   document.write("<b> Not Qualifies for driving</b>");
-			}
-			*/
-			
-			
-			
 			//switch case
-			
-			switch('60') 
+			switch('30') 
 			{
 				case '10':
 				document.write("<b> ans is  10</b>");
@@ -115,13 +95,39 @@
 				break;
 				
 				default:
-				document.write("<b> all con false</b>");
+				document.write("<b> all cond false</b>");
 				break;
 			}
 			
 			
 			
            
+			
+			
+			
+			// nested if
+			
+			var age=18;
+			if(age>18) 
+			{
+              if(age==18)
+			  {
+				document.write("<b>Qualifies for driving</b>");
+			  }
+			  else
+			  {
+				document.write("<b>Not Qualif	ies for driving</b>");
+			  }
+            }
+			else
+			{
+			   document.write("<b> Not Qualifies for driving</b>");
+			}
+			
+			
+			
+			
+			
       
       </script>      
       
