@@ -32,17 +32,16 @@ function validation3(arg){
 	
 	if(arg.ufn.value=="")
 	{
-		document.getElementById('msg').innerHTML='User First Name Field is required';
+		document.getElementById('msg').innerHTML='First Name Field is required';
+		//document.getElementById('ufn').setAttribute('placeholder','First Name Field is required');
 		arg.ufn.focus();
 		return false;
 	}
-	
 	if(arg.uln.value=="")
 	{
-		document.getElementById('msg').innerHTML='User Last Name Field is required';
+		document.getElementById('msg').innerHTML='Last Name Field is required';
 		arg.uln.focus();
 		return false;
 	}
-	
 }
 </script>
