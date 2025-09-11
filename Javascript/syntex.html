@@ -1,7 +1,7 @@
 
 <!--
 JavaScript is a lightweight, interpreted programming language.
-
+.
 It is complimentary to and integrated with Java. 
 JavaScript is very easy to implement because it is integrated with HTML. 
 
@@ -96,6 +96,8 @@ JavaScript in External File   file.js
 			// for print statement
 			
 			/*
+				multi 
+				line
 				comment 
 			*/
 			
@@ -120,55 +122,70 @@ JavaScript in External File   file.js
 	</head>
 	
 	<body>
+		
+		<h1>Hello i am html 5+5</h1>
 	
 	<script>
-		
-		// comment single line
-		
+	
+		// single line comment
 		
 		/*
-		multi 
-		line
+		multi
+		line 
 		comment
 		*/
-		document.write('Hello i am javascript');
 		
-		document.write('<h1>Hello i am javascript</h1>');
+		document.write("Hi hello javascript");
+		document.write("<h1>Hi hello javascript</h1>");
+		document.write(5+5);
 		
-		document.write('Hello i am javascript ' + ' ok !');
 		
+		document.write("Hi hello"+"javascript");
 		
-		document.write("<h1>" + (10+10) + "</h1>");
-		document.write("<h1>" + (10*10) + "</h1>");
-		
-		var a=10;
-		var b=20;
-		var c;
-		
+		var a,b,c;
+		a=10;
+		b=20;
 		c=a+b;
-		document.write(c);
+		
+		document.write("<h1> Sum of a & b are : " + c + "</h1>");
+		document.write(`<h1> Sum of a & b are : ${c} </h1>`);
+	</script>
+	
+	
+	
+	<!-- ========================== dynamic  -->
+	
+	<!-- html manuplation -->
+	<h1 id='test'>Hello i am html</h1>
+	
+	<script>
+		document.getElementById('test').innerHTML="Hello i am javascript";
+	</script>
+	
+	<!-- css manuplation -->
+	<h1 id='demo' style="background-color:red;color:yellow;text-align:center">Hello i am html</h1>
+	
+	<script>
+		document.getElementById('demo').style.backgroundColor="green";
+		document.getElementById('demo').style.color="red";
+	</script>
+	
+	
+	<!-- dynamic programing -->
+	<script>
 		
 		var age=19;
-		
 		if(age>18)
 		{
-			document.write('<h1>eligible for driving </h1>');
+			document.write("<h1>Elegible For Driving </h1>");
 		}
 		else
 		{
-			document.write('<h1>Not eligible for driving </h1>');
+			document.write("<h1>Not Elegible For Driving </h1>");
 		}
+		
 	</script>
 	
-	
-	<h1 id="test" style="background-color:red;color:white"> Hi i am from Raipur </h1>
-	
-	
-	<script>
-		document.getElementById('test').innerHTML="Hi i am from Ahmedabad";
-		document.getElementById('test').style.backgroundColor="blue";
-		document.getElementById('test').style.color="yellow";
-	</script>
 	
 	</body>
 </html>
