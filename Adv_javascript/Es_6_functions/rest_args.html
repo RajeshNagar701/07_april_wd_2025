@@ -18,20 +18,27 @@ data(1, 2, 3, 4); //we can provide inifite numbers as argument
 */
 
 
+
+
+
+
 /*
-function data(...abc)
+
+function data(...abc)   // abc array 
 {
 	for(var i=0;i<abc.length;i++)
 	{
-		document.write("<h6>"+ abc[i] + "</h6>"); 
+		document.write(abc[i] + "<br>")
 	}
 }
-data(2,4,7,8,6,8,9); //we can provide inifite numbers as argument
+data(1,2,4,7,8,6,8,9,11,12); //we can provide inifite numbers as argument
+
 */
+
 
 function data()
 {
-	for(var i=0;i<arguments.length;i++)
+	for(var i=0;i<arguments.length;i++)  // arguments its keyword direct auto set all arugument in it
 	{
 		document.write("<h6>"+ arguments[i] + "</h6>"); 
 	}

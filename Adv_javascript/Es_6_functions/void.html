@@ -12,7 +12,8 @@ This operator specifies an expression to be evaluated without returning a value.
  into the current document −
  
  -->
- <p><p>Click the following, This won't react at all...</p></p>
+
+ 
  <a href = "javascript:void(alert('Warning!!!'))">Click me!</a>     
  
  
@@ -29,13 +30,26 @@ The JavaScript:void(0) tells the browser to "do nothing" i.e., prevents the brow
 It is useful when we insert links that have some important role on the webpage without any reloading.
  So, using void(0) on such links prevents the reloading of the page but allows to perform a useful function such as updating a value on the webpage.
 -->
-<a href ="" onclick="">  
+
+<script>
+	function hello(){
+		document.write('hello');
+	}
+</script>
+
+
+<a href ="" onclick="hello()">  
 	It will do nothing.  
 </a>
 
-<a href = "javascript:void(0);"  onclick="">  
-	Delete
+<a href="javascript:void(0);"  onclick="hello()">  
+	href will do nothing. 
 </a>  
+
+
+
+
+
 
 <br>
 <br>
