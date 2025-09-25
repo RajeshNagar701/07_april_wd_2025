@@ -36,17 +36,20 @@ There are 3 ways to create objects.
 
 // single object 
 
-/*
+
 
 var single_obj={id:102,name:"Shyam Kumar",salary:40000};
 
-document.write(single_obj.id+" "+single_obj.name+" "+single_obj.salary);
+document.write(single_obj.id+" "+single_obj.name+" "+single_obj.salary  + "<br>");
 
+/*
 for(property in single_obj)
 {
-	document.write("<h1>" + single_obj[property] + "</h1>");
+	document.write(single_obj[property] + "<br>");
 }
 */
+
+
 
 var multi_obj=[
 				{id:101,name:"Shyam Kumar",salary:40000},
@@ -54,14 +57,12 @@ var multi_obj=[
 				{id:103,name:"karan Kumar",salary:50000}
 			  ];
   
-document.write(multi_obj[0].name+" "+multi_obj[2].id+" "+multi_obj[1].salary  + "<br>");  
+document.write(multi_obj[0].id+" "+multi_obj[1].name+" "+multi_obj[2].salary  + "<br>");  
 
 for(value of multi_obj)
 {
 	document.write(value.id+" "+value.name+" "+value.salary  + "<br>");
 }
-
-
 
 
 /*
